@@ -1,0 +1,90 @@
+body {
+    background-image: url('https://plus.unsplash.com/premium_photo-1664012343193-e1f1c6b13e2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bm9ydGglMjBwb2xlfGVufDB8fDB8fHww');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure background image covers the whole page */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    width: 30px;  /* Make snowflakes bigger */
+    height: 30px; /* Make snowflakes bigger */
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: fall 10s linear infinite;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    width: 35px;
+    height: 35px;
+    animation-duration: 12s;
+}
+
+.snowflake:nth-child(3) {
+    left: 40%;
+    width: 28px;
+    height: 28px;
+    animation-duration: 8s;
+}
+
+.snowflake:nth-child(4) {
+    left: 60%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 14s;
+}
+
+.snowflake:nth-child(5) {
+    left: 80%;
+    width: 32px;
+    height: 32px;
+    animation-duration: 9s;
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        opacity: 0.9;
+        transform: translateX(0);
+    }
+    100% {
+        top: 100vh;
+        opacity: 0.1;
+        transform: translateX(50px); /* Small drift effect */
+    }
+}
+
+.icebear-container{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.icebear-container img{
+    width: 400px; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}
+
+.item-1 p{
+    width: 400px;
+    color: #1f1f18;
+    font-weight: bolder;
+}
+
+.item-2 ul{
+    width: 400px;
+    color: #1a1a12;
+    font-weight: bolder;
+}

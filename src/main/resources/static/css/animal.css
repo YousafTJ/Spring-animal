@@ -1,0 +1,34 @@
+body{
+    background-image: url('https://files.oaiusercontent.com/file-r2EPYXPTj8AtmjHE550bqYJo?se=2024-10-21T09%3A29%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D434a0db2-8a9c-4ab1-abea-c1cbb15b1886.webp&sig=c/NxkTGXmU44iU9YVaDK1sV5NwSRDnaWPlh94BfbrT0%3D');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image on the page */
+}
+.text-container{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(246, 217, 69, 0.5);
+    width: 300px;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.animal-container{
+
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 3px rgba(246, 217, 69, 0.5);
+    width: 300px;
+    padding: 10px;
+}
+
+.animal-container a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+

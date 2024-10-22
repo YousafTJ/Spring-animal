@@ -1,0 +1,51 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNhZmFyaXxlbnwwfHwwfHx8MA%3D%3D'); /* Your background image URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    min-height: 100vh; /* Ensures it covers the entire height of the viewport */
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    font-family: Arial, sans-serif; /* Optional: Set a global font */
+}
+
+.lion-picture1{
+    width: 500px; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}
+
+.lion-description{
+    width: 500px;
+    margin: 10px;
+}
+
+.lion-description p{
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.lion-picture2{
+    width: 500px; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}
+
+.item-2 ul{
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lion-container{
+    display: flex;
+    align-items: flex-start;
+}

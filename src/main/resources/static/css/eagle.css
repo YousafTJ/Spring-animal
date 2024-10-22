@@ -1,0 +1,88 @@
+body {
+    background-image: url('https://files.oaiusercontent.com/file-PUkzTLKM6f79MLE8h1g9Pg38?se=2024-10-21T11%3A19%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1d8c8899-c3f4-478c-a7b9-58d2d0a316ac.webp&sig=Nc7cT5OAo1cXeWBdo0RDW118AdIvy4o36jObuHaRfWc%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sky {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent; /* Make the sky background transparent */
+}
+
+.cloud {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 50px 50px 0 -20px #ffffff, 100px 100px 0 -40px #ffffff, -50px 50px 0 -20px #ffffff;
+    opacity: 0.8;
+    animation: moveClouds 30s linear infinite;
+}
+
+.cloud:nth-child(2) {
+    width: 300px;
+    height: 160px;
+    top: 30vh;
+    left: -400px;
+    animation: moveClouds 40s linear infinite;
+}
+
+.cloud:nth-child(3) {
+    width: 250px;
+    height: 140px;
+    top: 50vh;
+    left: -500px;
+    animation: moveClouds 50s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% {
+        left: -250px;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+
+.eagle-cotnainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-1 p{
+    color: saddlebrown;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item-2{
+    color: saddlebrown;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.eagle-picture1{
+    width: 500px; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}
+
+.eagle-picture2{
+    width: 500px; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}

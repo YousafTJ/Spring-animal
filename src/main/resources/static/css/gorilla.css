@@ -1,0 +1,42 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1475333017476-3482638e685b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8anVuZ2xlfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Make sure the background covers the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically and horizontally */
+}
+
+.gorilla-container {
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    width: 100%; /* Full width container */
+    padding: 0 50px; /* Add padding to give space from the edges */
+}
+
+.item-1 img, .item-2 img {
+    width: 400px; /* Adjust width for better spacing */
+    height: auto;
+    border-radius: 5px;
+    z-index: 2;
+    opacity: 0.7;
+    border: none;
+}
+
+.item-1 p, .item-2 ul {
+    color: ghostwhite;
+    font-weight: bolder;
+    width: 400px;
+    font-size: 20px;
+}
+
+.item-1, .item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text inside each item */
+}

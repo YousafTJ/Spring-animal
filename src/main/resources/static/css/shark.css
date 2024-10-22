@@ -1,0 +1,48 @@
+body{
+    background-image: url('https://files.oaiusercontent.com/file-Cw1vP89WtQAHj94xwzxkLVFR?se=2024-10-21T10%3A25%3A17Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2ae8b01d-428f-4483-b8da-ae6023285aee.webp&sig=Bbf%2Bu8NKayDf/wb3uu75DFZHYSFTEg7wXFnBb7OakGU%3D');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image on the page */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    position: relative;
+    margin: 10px;
+}
+
+
+
+.shark-info, .shark-food {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.shark-picture1 {
+    max-width: 100%; /* Make sure the image stays within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 5px;/* Optional: round the corners of the image */
+    z-index: 2;
+    opacity: 0.5;
+
+}
+
+.shark-info p, .shark-food p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.shark-container {
+    display: flex;
+    justify-content: space-around; /* Space between the images */
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shark-item {
+    width: 45%; /* Adjust width of each item */
+    text-align: center;
+}

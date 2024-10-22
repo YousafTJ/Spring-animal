@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/animal.css}">
+    <title>Animals</title>
+</head>
+<body>
+<div class="text-container">
+<h1 style="color: ghostwhite">Here can you see all animals</h1>
+<h2 style="color: ghostwhite">Press on the animal to go their page</h2>
+</div>
+<div class="animal-container">
+
+    <div class="shark">
+        <a th:href="@{/shark}">Shark</a>
+    </div>
+
+    <div class="lion">
+        <a th:href="@{/lion}">Lion</a>
+    </div>
+
+    <div class="eagle">
+        <a th:href="@{/eagle}">Eagle</a>
+    </div>
+
+    <div class="icebear">
+        <a th:href="@{/icebear}">Icebear</a>
+    </div>
+
+    <div class="gorilla">
+        <a th:href="@{/gorilla}">Gorilla</a>
+    </div>
+
+</div>
+
+</body>
+</html>
