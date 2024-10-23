@@ -73,7 +73,7 @@ body {
     height: auto; /* Maintain the image's aspect ratio */
     border-radius: 5px;/* Optional: round the corners of the image */
     z-index: 2;
-    opacity: 0.7;
+    opacity: 0.5;
     border: none;
 }
 
@@ -87,4 +87,50 @@ body {
     width: 400px;
     color: #1a1a12;
     font-weight: bolder;
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px; /* Place it 20px from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #aac5e1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.6;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+}
+
+
+.return-button:hover {
+/* Light up effect on hover with box shadow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow around the button */
+
+    /* Glow effect on the text */
+    text-shadow: 0 0 10px white;
+}
+
+/* Optional: Additional transition delay for hover effect */
+.return-button {
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease; /* Controls the speed of the transition */
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #3687a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.6;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
 }

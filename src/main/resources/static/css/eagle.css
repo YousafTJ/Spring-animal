@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://files.oaiusercontent.com/file-PUkzTLKM6f79MLE8h1g9Pg38?se=2024-10-21T11%3A19%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1d8c8899-c3f4-478c-a7b9-58d2d0a316ac.webp&sig=Nc7cT5OAo1cXeWBdo0RDW118AdIvy4o36jObuHaRfWc%3D');
+    background-image: url('https://img.freepik.com/free-photo/fantasy-eagle-illustration_23-2151642088.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,4 +85,49 @@ body {
     z-index: 2;
     opacity: 0.7;
     border: none;
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px; /* Place it 20px from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #629ede;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.7;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+}
+
+.return-button:hover {
+/* Light up effect on hover with box shadow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow around the button */
+
+    /* Glow effect on the text */
+    text-shadow: 0 0 10px white;
+}
+
+/* Optional: Additional transition delay for hover effect */
+.return-button {
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease; /* Controls the speed of the transition */
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #69c6d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.8;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
 }

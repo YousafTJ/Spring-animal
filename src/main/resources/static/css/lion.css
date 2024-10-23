@@ -49,3 +49,76 @@ body {
     display: flex;
     align-items: flex-start;
 }
+
+.return-button {
+    position: absolute;
+    bottom: 20px; /* Keeps the button 20px from the bottom */
+    left: 20px;   /* Positions the button 20px from the left side */
+    padding: 10px 20px;
+    background-color: #cba359;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.6;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+
+}
+
+.return-button:hover {
+/* Light up effect on hover with box shadow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow around the button */
+
+    /* Glow effect on the text */
+    text-shadow: 0 0 10px white;
+}
+
+/* Optional: Additional transition delay for hover effect */
+.return-button {
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease; /* Controls the speed of the transition */
+}
+
+.item-1, .item-2 {
+    opacity: 0; /* Start hidden */
+    transform: translateY(-100px); /* Start above the viewport */
+    animation-fill-mode: forwards; /* Ensure the element stays at its end state */
+}
+
+/* First image and text pop-in animation */
+.item-1 {
+    animation: fadeInFromTop 1s ease forwards; /* Animation for 1 second */
+}
+
+/* Second image and text pop-in animation with a 1 second delay */
+.item-2 {
+    animation: fadeInFromTop 1s ease 1s forwards; /* Delay the start by 1 second */
+}
+
+/* Keyframes for the pop-in effect from the top */
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0; /* Hidden */
+        transform: translateY(-100px); /* Positioned above */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* In its final position */
+    }
+}
+
+
+.return-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #cba359;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.6;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+}

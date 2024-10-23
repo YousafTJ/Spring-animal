@@ -31,4 +31,10 @@ public class AnimalController {
     public String gorillaPage() {
         return "gorilla";  // This will look for gorilla.html in templates folder
     }
+
+    @GetMapping("/return")
+    public String returnPage(){
+        return "index";
+    }
+
 }

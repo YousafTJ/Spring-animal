@@ -13,18 +13,21 @@ body {
 
 .gorilla-container {
     display: flex;
-    justify-content: space-between; /* Align items to left and right */
-    width: 100%; /* Full width container */
-    padding: 0 50px; /* Add padding to give space from the edges */
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around; /* Center items with space around */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px; /* Space between items */
 }
 
 .item-1 img, .item-2 img {
-    width: 400px; /* Adjust width for better spacing */
+    width: 100%; /* Make images responsive */
+    max-width: 400px; /* Limit the max width */
     height: auto;
     border-radius: 5px;
     z-index: 2;
-    opacity: 0.7;
-    border: none;
 }
 
 .item-1 p, .item-2 ul {
@@ -39,4 +42,50 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center; /* Center text inside each item */
+    max-width: 45%; /* Ensure items do not exceed half the container width */
+    min-width: 300px; /* Ensure items have a minimum width */
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px; /* Place it 20px from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.7;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+}
+
+.return-button:hover {
+/* Light up effect on hover with box shadow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow around the button */
+
+    /* Glow effect on the text */
+    text-shadow: 0 0 10px white;
+}
+
+/* Optional: Additional transition delay for hover effect */
+.return-button {
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease; /* Controls the speed of the transition */
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #151007;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
 }
